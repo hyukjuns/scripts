@@ -2,11 +2,6 @@ import csv
 import requests
 from bs4 import BeautifulSoup
 
-# soup.select('.class명')
-# soup.select('#id명')
-# soup.select('태그명') (HTML 태그명은 아무것도 안붙임)
-# soup.select('.class명1 .class명2') (띄어쓰기는 '~내부의' 라는 뜻)
-
 def ranking_news(category):
     data = requests.get(f"https://sports.naver.com/{category}/index")
     soup = BeautifulSoup(data.content, 'html.parser')
