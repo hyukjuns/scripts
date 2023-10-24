@@ -27,7 +27,7 @@ time_data = datetime.datetime.now()
 print(time_data)
 ```
 
-#### CSS Selector
+### HTML Parsing - selector
 ```
 soup.select('.class명')
 soup.select('#id명')
@@ -35,7 +35,7 @@ soup.select('태그명') (HTML 태그명은 아무것도 안붙임)
 soup.select('.class명1 .class명2') (띄어쓰기는 '~내부의' 라는 뜻)
 ```
 
-#### Find all
+### HTML Parsing - find_all
 ```
 # find_all ('태그', '속성')
 val = soup.find_all("em", id="now_value")[0].text
