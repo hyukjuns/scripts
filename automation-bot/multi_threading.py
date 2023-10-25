@@ -30,7 +30,7 @@ print(end-start)
 
 # 쓰레드 4개 사용 시간 측정
 start = time.time()
-pool = ThreadPool(4)
+pool = ThreadPool(4) # 쓰레드 4개 사용
 result = map(get_data, url) # map(함수, 리스트)
 pool.close()
 pool.join()
@@ -38,4 +38,3 @@ end = time.time()
 print(end-start)
 
 print(list(result))
-
