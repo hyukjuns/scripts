@@ -1,4 +1,17 @@
 # Python Scripting
+### Selinium
+```
+# 요소찾기
+driver.find_element_by_css_selector('.class명')
+driver.find_element_by_css_selector('#id명')
+driver.find_element_by_css_selector('태그명[속성이름="속성명"]')
+driver.find_element(By.CSS_SELECTOR,'.class명')
+driver.find_element(By.CSS_SELECTOR,'#id명')
+
+# 복수 요소
+driver.find_elements_by_css_selector('.class명')[X]
+driver.find_elements(By.CSS_SELECTOR, '.class명')[X] #위 문법이 안될 경우
+```
 ### MultiThread
 ```
 # Multi Processing vs Multi Threading
