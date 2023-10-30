@@ -52,6 +52,7 @@ python -m pip install selenium==4.11.2
 # 기본 사용법
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
 
 driver = webdriver.Chrome()
 
