@@ -1,6 +1,7 @@
+import time
 import json
 import requests
-import time
+
 
 
 data = requests.get('<URL>')

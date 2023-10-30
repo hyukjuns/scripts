@@ -1,7 +1,7 @@
-import requests
 import json
 import time
 from multiprocessing.dummy import Pool as ThreadPool
+import requests
 
 url = [
   "https://tb.coinone.co.kr/api/v1/chart/olhc/?site=coinoneeth&type=1h&last_time=1609524000000",
