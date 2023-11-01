@@ -1,4 +1,17 @@
 # Python Scripting
+
+### requests - header, cookie
+```
+import requests
+header = {
+    'User-Agent': '<USER_AGENT>'
+}
+cookie = {
+    <COOKIE>
+}
+response = requests.get('URL', headers=header, cookies=cookie)
+```
+
 ### Installing pip
 ```
 # Install
