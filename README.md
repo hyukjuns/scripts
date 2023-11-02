@@ -1,5 +1,11 @@
 # Python Scripting
-
+### mssql connect
+[Prerequisites](https://learn.microsoft.com/en-us/sql/connect/python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development?view=sql-server-ver16&tabs=linux#install-the-odbc-driver)
+```
+# Required Driver & Package
+- driver: Microsoft ODBC 17 [18]
+- pakage: pyodbc
+```
 ### Azure Connect
 ```
 # Required Package
