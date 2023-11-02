@@ -1,5 +1,12 @@
 # Python Scripting
 
+### Azure Connect
+```
+# Required Package
+azure-mgmt-resource>=18.0.0
+azure-identity>=1.5.0
+```
+
 ### requests - header, cookie
 ```
 import requests
