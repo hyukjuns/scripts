@@ -1,4 +1,46 @@
 # Python Scripting
+
+### Pandas
+```
+# Package
+import pandas as pd
+
+# Dataframe(as df) = Matrix
+# Series = List
+
+# Group by
+df.groupby('컬럼')
+
+# Correlation, 상관관계
+# 0에 수렴: 상관없음, 1에 수렴: 정비례, -1에 수렴: 반비례
+df[['컬럼1','컬럼2']].corr()
+df[['사용금액','사용횟수']].corr()
+
+# Filter(Condition), query
+df[ CONDITION ]
+df.query("QUERY")
+
+# Excel (.xlsx)
+import openpyxl
+
+# apply: df['컬럼'].apply(함수)
+def include_tax(data):
+    return data * 1.1
+
+raw_data['부가세포함'] = raw_data['판매가'].apply(include_tax)
+
+# regex
+import re
+re.search('Keyword', 'Sentence') # return Object or None
+```
+### Send Mail
+```
+# Package
+import smtplib
+from email.mime.text import MIMEText
+
+# Login > ID, Application PW (MFA 우회)
+```
 ### mssql connect
 [Prerequisites](https://learn.microsoft.com/en-us/sql/connect/python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development?view=sql-server-ver16&tabs=linux#install-the-odbc-driver)
 ```
