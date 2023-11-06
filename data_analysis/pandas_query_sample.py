@@ -8,8 +8,8 @@ corr = df[['사용금액', '사용횟수']].corr()
 print(corr)
 
 # Filter - simple
-print(df[df['나이']> 50])
-
+print(df[df['나이'] > 50])
+print(df[df['사용금액'] < 1000])
 # Filter - query
 print(df.query("성별 == 'M' and 기혼 == 'Married'").describe())
 

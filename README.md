@@ -1,5 +1,19 @@
 # Python Scripting
 
+# regex
+```
+# re.search > return obejct
+# re.findall > return list
+# re.sub > replace, return list
+^: start
+$: end
+\: escape
+[]: or
+[^]: Not
++: iter
+re.IGNORECASE: case insensitive
+```
+
 ### Pandas
 ```
 # Package
