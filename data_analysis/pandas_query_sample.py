@@ -1,5 +1,6 @@
 import pandas as pd
 
+# Read CSV and Make dataframe
 df = pd.read_csv('credit.csv')
 
 # Correlation > corr()

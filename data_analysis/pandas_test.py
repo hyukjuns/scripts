@@ -10,3 +10,5 @@ print(df['사용금액'].max())
 print(df['사용금액'].min())
 print(df[['사용금액','사용횟수']].describe())
 print(df.groupby('성별').max())
+
+print(df['사용금액'].plot())

@@ -2,8 +2,8 @@ import pandas as pd
 
 df = pd.read_csv('credit.csv')
 
-# data = df.groupby('소득')
-# print(data.describe())
+data = df.groupby('소득')
+print(data.describe())
 
 df = df.replace('$120K +', 120)
 df = df.replace('$40K - $60K', 50)

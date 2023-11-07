@@ -1,13 +1,47 @@
 # Python Scripting
 
+# pandas_datareader, matplotlib
+- pandas_datareader: Get Data from external
+- matplotlib: Draw plot, bar, pie, scatter, stackplot
+```
+# pandas_datareader
+from pandas_datareader import data
+
+# 이동평균선 (rolling = window slice)
+df.rolling(NUMBER).mean() # NUMBER 간격으로 평균 구하기
+
+# matplotlib
+import matplotlib.pyplot as plt
+
+# plot(x, y)
+plt.figure(figsize=(5,5))
+plt.plot([1,2,3], [10,20,30], color='blue')
+plt.xlabel('time')
+plt.ylabel('growth')
+plt.legend(["career"])
+plt.show()
+
+```
+
 # regex
 ```
 # re.search > return obejct
 # re.findall > return list
+
 # re.sub > replace, return list
+# Ex: 2023-10-10 to 2023.10.10
+re.sub('target', 'change', 'string')
+
+# ^시작문자, 끝문자$, \특수문자
+# [abc]: a or b or c, [a-zA-Z]
 ^: start
 $: end
 \: escape
+
+# [^abc] : Not, a or b or c가 아닌것
+# \d: digit, 모든숫자, 2자리: \d\d, 3자리: \d{3}, 숫자가아님: \D, 스페이스바검색: \s, 스페이스가 아닌것 \S(모든문자)
+# a+ : a 라는 숫자 반복해서 찾음
+# case insensitive: re.findall('kw','string', re.IGNORECASE)
 []: or
 [^]: Not
 +: iter
