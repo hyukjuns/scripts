@@ -2,8 +2,6 @@ import time
 import json
 import requests
 
-
-
 data = requests.get('<URL>')
 # print(data.content)
 

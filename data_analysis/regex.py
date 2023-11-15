@@ -1,11 +1,10 @@
 import re
 
 # return object
-re.search('keyword','string')
+test = re.search('kw','stringkw')
+print(test)
 
 # return list
-re.search('kw','string')
-
 # ^시작문자, 끝문자$, \특수문자
 # [abc]: a or b or c, [a-zA-Z]
 a = re.findall('[tajjb]', 'abcedfg')

@@ -1,6 +1,19 @@
-# Python Scripting
+## Python Scripts
+### python setup
+```
+# Setting venv
+python3 -m venv .venv
+source .venv/bin/activate
+python -V
+which python
 
-# pandas_datareader, matplotlib
+# Setting vscode interpreter
+
+# Disable venv
+deactivate
+```
+
+### pandas_datareader, matplotlib
 - pandas_datareader: Get Data from external
 - matplotlib: Draw plot, bar, pie, scatter, stackplot
 ```
@@ -23,7 +36,7 @@ plt.show()
 
 ```
 
-# regex
+### regex
 ```
 # re.search > return obejct
 # re.findall > return list
