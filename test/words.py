@@ -13,6 +13,5 @@ endindex = tlen - plen + 1
 for i in range(0,endindex):
     temp.append(t[i:i+plen])
 
-
 ans = filter(lambda x: x > p, temp)
 print(list(ans))
