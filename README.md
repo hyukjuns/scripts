@@ -17,6 +17,10 @@ deactivate
 - pandas_datareader: Get Data from external
 - matplotlib: Draw plot, bar, pie, scatter, stackplot
 ```
+# Filter, Map, Lambda
+ans = filter(lambda x: x > p, temp_list)
+ans = map(lambda x: x*p, temp_list)
+
 # pandas_datareader
 from pandas_datareader import data
 
